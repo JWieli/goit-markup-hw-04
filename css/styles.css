@@ -384,7 +384,8 @@ h3 {
 
 .customers-list:hover,
 .customers-list:focus {
-  border-color:var(--blue);
+  border-color: var(--blue);
+  cursor: pointer;
 }
 
 .footer {
@@ -496,6 +497,7 @@ h3 {
 .social-links-icon-list:focus {
   background-color: var(--blue);
   border-radius: 50%;
+  cursor: pointer;
 }
 .social-links-list {
   display: flex;
@@ -532,9 +534,6 @@ h3 {
   cursor: pointer;
   border-radius: 4px;
   align-items: center;
-  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
-  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.08);
-  box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
 
 .portfolio-all {
@@ -596,12 +595,22 @@ h3 {
   cursor: pointer;
 }
 
+.hover:hover svg,
+.hover:focus svg {
+  fill: var(--blue);
+  cursor: pointer;
+}
+
 .hover-button:hover,
 .hover-button:focus {
   background-color: var(--blue);
   color: var(--main-white);
   cursor: pointer;
-  border-radius: 4px;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
+
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.08);
+
+  box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
 
 .hover-icons:hover svg,
@@ -610,4 +619,15 @@ h3 {
   cursor: pointer;
   outline: var(--blue);
   fill: var(--blue);
+}
+
+.portfolio-all:hover,
+.portfolio-all:focus {
+  background: linear-gradient(0deg, #eeeeee, #eeeeee), (0deg, #ffffff, #ffffff);
+  box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16);
+
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.06);
+
+  box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+  border: 1px solid rgba(238, 238, 238, 1);
 }
