@@ -320,15 +320,20 @@ h3 {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-color: var(--main-white);
 }
 
-.our-team-icons-list:hover svg,
-.our-team-icons-list:focus svg {
+.our-team-icons-list:hover,
+.our-team-icons-list:focus {
   background-color: var(--blue);
   fill: var(--main-white);
   cursor: pointer;
   border-radius: 50%;
+}
+
+.our-team-icons-list:hover svg,
+.our-team-icons-list:focus svg {
+  fill: var(--main-white);
+  cursor: pointer;
 }
 .names {
   font-weight: 500;
@@ -377,6 +382,11 @@ h3 {
   border-color: var(--blue);
 }
 
+.clients-list:hover,
+.clients-list:focus {
+  border-color:var(--blue);
+}
+
 .footer {
   background-color: var(--background);
   flex-direction: row;
@@ -391,7 +401,6 @@ h3 {
 .section-footer {
   padding: 60px 0;
   display: flex;
-  flex-direction: column;
 }
 .footer-address-list {
   display: flex;
@@ -421,11 +430,6 @@ h3 {
   line-height: 1.17;
 }
 
-.main-footer-list {
-  display: flex;
-  flex-direction: row;
-  padding: 0;
-}
 .footer-list {
   display: flex;
   line-height: 1.17;
@@ -466,8 +470,6 @@ h3 {
   width: 206px;
   height: 80px;
   margin-left: 70px;
-  display: flex;
-  flex-direction: column;
 }
 
 .social-links-header {
@@ -481,29 +483,34 @@ h3 {
   justify-content: left;
 }
 
+.social-links-icon-list {
+  width: 44px;
+  height: 44px;
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-links-icon-list:hover,
+.social-links-icon-list:focus {
+  background-color: var(--blue);
+  border-radius: 50%;
+}
 .social-links-list {
   display: flex;
   flex-direction: row;
   padding: 0;
 }
 
-.social-links-icon-list {
-  width: 44px;
-  height: 44px;
-}
-
 .social-links-icons {
   width: 20px;
   height: 20px;
+  background-color: linear-gradient(
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.1)
+  );
 }
-
-/* .main-sections-portfolio {
-  display: flex;
-  flex-direction: row;
-  padding: 0px;
-}  */
-
-/*czy to jest potrzebne? */
 
 .main-section-buttons {
   display: flex;
@@ -597,7 +604,7 @@ h3 {
   border-radius: 4px;
 }
 
-.hover:hover svg,
+.hover-icons:hover svg,
 .hover-icons:focus svg {
   color: var(--blue);
   cursor: pointer;
