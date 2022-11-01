@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="pl">
   <head>
-    <meta charset="UTF-8" />
+     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Studio</title>
+    <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -36,14 +37,17 @@
           </ul>
           <ul class="header-list2">
             <li>
-              <a href="mailto:info@devstudio.com"
-                ><span class="contact-mail hover">info@devstudio.com</span></a
-              >
+              <a class="contact-mail hover" href="mailto:info@devstudio.com">
+                  <svg class="header-icons">
+                    <use xlink href="./images/icons.svg#icon-envelope"></use>
+                  </svg>info@devstudio.com</a>
             </li>
             <li>
-              <a href="tel:+48111111111"
-                ><span class="contact-phone hover">+48 111 111 111</span></a
-              >
+              <a class="contact-phone hover" href="tel:+48111111111"> <svg class="header-icons">
+                <use xlink href="./images/icons.svg#icon-smartphone"></use>
+              </svg>
+                +48 111 111 111
+               </a>
             </li>
           </ul>
         </menu>
@@ -67,6 +71,11 @@
         <div class="container">
           <ul class="lorem lorem-box">
             <li class="lorem-list">
+              <div class="background-icons">
+              <svg class="lorem-icons">
+                <use xlink href="./images/icons.svg#icon-antenna-1"></use>
+              </svg>
+            </div>
               <h3>Lorem ipsum</h3>
               <p class="box">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
@@ -74,6 +83,11 @@
               </p>
             </li>
             <li class="lorem-list">
+              <div class="background-icons">
+                <svg class="lorem-icons">
+                  <use xlink href="./images/icons.svg#icon-clock-1"></use>
+                </svg>
+              </div>
               <h3>Lorem ipsum</h3>
               <p class="box">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
@@ -81,6 +95,11 @@
               </p>
             </li>
             <li class="lorem-list">
+              <div class="background-icons">
+                <svg class="lorem-icons">
+                  <use xlink href="./images/icons.svg#icon-diagram-1"></use>
+                </svg>
+              </div>
               <h3>Lorem ipsum</h3>
               <p class="box">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
@@ -88,6 +107,11 @@
               </p>
             </li>
             <li class="lorem-list">
+              <div class="background-icons">
+                <svg class="lorem-icons">
+                  <use xlink href="./images/icons.svg#icon-astronaut-1"></use>
+                </svg>
+              </div>
               <h3>Lorem ipsum</h3>
               <p class="box">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
@@ -99,7 +123,7 @@
       </section>
       <section class="segments section">
         <div class="container">
-          <h2 class="segments-header">Czym się zajmujemy</h2>
+          <h2 class="headers">Czym się zajmujemy</h2>
           <ul class="segments-list">
             <li class="segments-photos">
               <img
@@ -130,7 +154,7 @@
       </section>
       <section class="our-team section">
         <div class="container">
-          <h2 class="our-team-header">Nasz zespół</h2>
+          <h2 class="headers">Nasz zespół</h2>
           <ul class="our-team-photos">
             <li class="photos">
               <img
@@ -174,6 +198,43 @@
             </li>
           </ul>
         </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <h2 class="headers">Nasi klienci</h2>
+        <ul class="clients">
+          <li class="clients-list">
+            <svg class="clients-icons">
+              <use xlink href="./images/icons.svg#icon-YaCo-Logo"></use>
+            </svg>
+          </li>
+          <li class="clients-list">
+            <svg class="clients-icons">
+              <use xlink href="./images/icons.svg#icon-company1-logo"></use>
+            </svg>
+          </li>
+          <li class="clients-list">
+            <svg class="clients-icons">
+              <use xlink href="./images/icons.svg#icon-company2-logo"></use>
+            </svg>
+          </li>
+          <li class="clients-list">
+            <svg class="clients-icons">
+              <use xlink href="./images/icons.svg#icon-fosterpeters-logo"></use>
+            </svg>
+          </li>
+          <li class="clients-list">
+            <svg class="clients-icons">
+              <use xlink href="./images/icons.svg#icon-brand-logo"></use>
+            </svg>
+          </li>
+          <li class="clients-list">
+            <svg class="clients-icons">
+              <use xlink href="./images/icons.svg#icon-company3-logo"></use>
+            </svg>
+          </li>
+        </ul>
+      </div>
       </section>
     </main>
     <footer class="footer">

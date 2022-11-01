@@ -33,7 +33,6 @@ header {
   line-height: 1.17;
   color: var(--blue);
   padding: 25px 0;
-
 }
 .Webstudio-header {
   font-weight: bold;
@@ -59,7 +58,7 @@ header {
   flex-direction: row;
   width: 254px;
   height: 16px;
-  margin: 32px 371px 32px 0px;
+  margin: 32px 345px 32px 0px;
   line-height: 1.17;
   gap: 46px;
 }
@@ -106,15 +105,15 @@ menu {
   display: flex;
   padding: 32px 0;
   line-height: 1.17;
-  width: 295px;
-  gap: 50px;
+  width: 321px;
+  gap: 30px;
   flex-direction: row;
 }
 
 .contact-mail {
   font-weight: 500;
   font-size: 14px;
-  width: 135px;
+  width: 161px;
   height: 16px;
   color: var(--silver);
   text-decoration: none;
@@ -123,18 +122,26 @@ menu {
 .contact-phone {
   font-weight: 500;
   font-size: 14px;
-  width: 110px;
+  width: 130px;
   height: 16px;
   color: var(--silver);
   text-decoration: none;
 }
 
+.header-icons {
+  width: 16px;
+  height: 12px;
+  padding-right: 10px;
+  fill: var(--silver);
+}
+
 .section1 {
-  background-color: var(--background);
   height: 600px;
   align-items: center;
   display: flex;
   flex-direction: column;
+  background: url(../images/background-photo.jpg);
+  background-size: cover;
 }
 
 .box-hugetext {
@@ -207,17 +214,33 @@ h3 {
   gap: 15px;
 }
 
+.background-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--second-white);
+  width: 270px;
+  height: 120px;
+  border-radius: 4px;
+}
 .list-lorem {
   width: calc((100% - 45px) / 4);
   gap: 30px;
+  display: flex;
 }
 
-.segments-header {
-  text-align: center;
+.lorem-icons {
+  width: 65.32px;
+  height: 70px;
+  justify-content: center;
+}
+.headers {
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
-  padding-bottom: 50px;
+  text-align: center;
   margin: 0;
+  padding-bottom: 50px;
 }
 
 .segments-list {
@@ -239,14 +262,16 @@ h3 {
   flex-direction: column;
 }
 
-.our-team-header {
+/* .our-team-header {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   margin: 0;
   padding-bottom: 50px;
-}
+
+  to raczej można wyrzucić
+} */
 
 .our-team-photos {
   display: flex;
@@ -281,6 +306,39 @@ h3 {
   line-height: 1.17;
   text-align: Center;
   color: var(--silver);
+}
+
+.clients {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin: 0 auto;
+  padding: 0;
+}
+.clients-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgba(175, 177, 184, 1);
+  width: 170px;
+  height: 92px;
+  border-radius: 4px;
+}
+
+.clients-icons {
+  width: 106px;
+  height: 60px;
+  fill: var(--silver);
+}
+
+.clients-list:hover svg,
+.clients-list:focus svg {
+  fill: var(--blue);
+  cursor: pointer;
+  border: var(--blue);
+  fill: var(--blue);
+  outline: var(--blue);
 }
 
 .footer {
@@ -368,7 +426,6 @@ h3 {
   gap: 8px;
   padding-bottom: 34px;
   margin: 0 auto;
-
 }
 
 .buttons {
@@ -440,7 +497,6 @@ h3 {
   padding-top: 0px;
 }
 
-
 .hover:hover,
 .hover:focus {
   color: var(--blue);
@@ -453,4 +509,12 @@ h3 {
   color: var(--main-white);
   cursor: pointer;
   border-radius: 4px;
+}
+
+.hover:hover svg,
+.hover-icons:focus svg {
+  color: var(--blue);
+  cursor: pointer;
+  outline: var(--blue);
+  fill: var(--blue);
 }
