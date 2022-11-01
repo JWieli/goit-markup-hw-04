@@ -325,7 +325,6 @@ h3 {
 .our-team-icons-list:hover svg,
 .our-team-icons-list:focus svg {
   background-color: var(--blue);
-  border-radius: 50px;
   fill: var(--main-white);
   cursor: pointer;
 }
