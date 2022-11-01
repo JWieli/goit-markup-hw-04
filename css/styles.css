@@ -140,7 +140,12 @@ menu {
   align-items: center;
   display: flex;
   flex-direction: column;
-  background: url(../images/background-photo.jpg);
+  background: linear-gradient(
+      90deg,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/background-photo.jpg);
   background-size: cover;
 }
 
@@ -336,9 +341,7 @@ h3 {
 .clients-list:focus svg {
   fill: var(--blue);
   cursor: pointer;
-  border: var(--blue);
-  fill: var(--blue);
-  outline: var(--blue);
+  border-color: var(--blue);
 }
 
 .footer {
